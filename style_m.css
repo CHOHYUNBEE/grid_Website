@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+body {
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+   background-color: #000;
+   font-family: "Pretendard", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   line-height: 1.3;
+}
+
+/* 모바일 */
+#header #gnb_group #gnb {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   background-color: #000;
+   width: 100%;
+   height: 5vh;
+   display: flex;
+   font-size: 1.3rem;
+   border-bottom: 1px solid #fff;
+   text-align: center;
+}
+
+#header #gnb_group #gnb li {
+   width: 25%;
+}
+
+#header #gnb_group #gnb li a {
+   display: block;
+   color: white;
+   text-decoration: none;
+   line-height: 1.8;
+   font-weight: bold;
+}
+
+#hidden_space {
+   display: none;
+}
+
+#sub_header {
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+}
+
+#sub_header p {
+   display: none;
+}
+
+#sub_header h1 {
+   margin: 0;
+   font-size: 5rem;
+   color: #fff;
+   text-indent: 15px;
+   font-weight: 900;
+}
+
+#sub_header #list_img {
+   width: 50px;
+   height: 50px;
+   transform: rotate(90deg);
+   position: absolute;
+   right: 1vh;
+   top: 2vh;
+}
+
+#sub_header_list {
+   padding: 0;
+   width: 40%;
+   position: absolute;
+   top: 25%;
+   right: 0;
+   display: grid;
+   grid-template: 2vh /1fr 1fr 1fr 1fr;
+
+}
+
+#sub_header_list2,
+#sub_header_list3 {
+   display: none;
+}
+
+#sub_header_list li a {
+   text-decoration: none;
+   color: white;
+   position: relative;
+   display: none;
+}
+
+#sub_header_list img {
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   top: 0;
+   left: -20%;
+}
+
+#container img {
+   width: 100%;
+}
+
+#container #main_img {
+   width: 100%;
+   height: 80vh;
+   background-image: url(./images/music.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+#container_content {
+   color: white;
+   height: 20vh;
+   background-image: url(./images/icons8-airplane-mode-on-96.png);
+   background-repeat: no-repeat;
+   background-position: 80% 80%;
+   background-size: 150px;
+}
+
+#container_content h2 {
+   font-size: 1.5rem;
+}
+
+#content_txt {
+   width: 80%;
+   margin: 50px auto;
+}
+
+#content_txt h2 {
+   font-size: 1.6rem;
+}
+
+#content_txt p {
+   font-size: 1.1rem;
+   color: #ddd;
+}
+
+#contents_group {
+   display: grid;
+   grid-template: 300px 300px 300px / 1fr 1fr;
+   background-color: #fff;
+   place-content: center;
+}
+
+.content {
+   width: 100%;
+   height: 100%;
+}
+
+.content h2 {
+   width: 80%;
+   margin: 0 auto;
+   margin-top: 6vh;
+   font-size: 1.6rem;
+}
+
+.content p {
+   width: 80%;
+   margin: 2vh auto;
+   font-size: 1.2rem;
+}
+
+.content:nth-child(1) {
+   background: url(./images/sub_img3.jpg) no-repeat;
+   background-size: cover;
+   position: relative;
+}
+
+.content:first-child h2:first-child {
+   font-size: 5rem;
+   font-weight: bold;
+   display: flex;
+   justify-content: center;
+   color: white;
+   margin-top: 2vh;
+}
+
+.content:first-child h2:last-child {
+   font-size: 2rem;
+   font-weight: bold;
+   display: flex;
+   justify-content: center;
+   color: white;
+}
+
+#line {
+   border-bottom: #fff solid 1px;
+   position: relative;
+   top: 30px;
+}
+
+.content:nth-child(4) {
+   background: url(./images/bells.jpg) no-repeat;
+   background-size: cover;
+}
+
+.content:nth-child(6) {
+   background: url(./images/bird.jpg) no-repeat;
+   background-size: cover;
+}
+
+.hidden_img {
+   display: none;
+}
+
+#hidden_img1 {
+   background-color: #000;
+   color: white;
+   font-size: 1.3rem;
+   font-weight: bold;
+   width: 100%;
+   text-indent: 10px;
+   margin: 0 auto;
+   position: relative;
+}
+
+#hidden_img1 img {
+   width: 200px;
+   animation: infinite rotate 2s;
+   animation-timing-function: ease-in;
+   animation-fill-mode: forwards;
+   position: absolute;
+   right: 0;
+}
+
+#hidden_img2 {
+   background: url(./images/girl.jpg) no-repeat;
+   background-size: cover;
+}
+
+#hidden_img3 {
+   background: url(./images/museum.jpg) no-repeat;
+   background-size: cover;
+}
+
+#hidden_img4 {
+   background: url(./images/barber-shop.jpg) no-repeat;
+   background-size: cover;
+}
+
+#hidden_img5 {
+   background: url(./images/woman-7.jpg) no-repeat;
+   background-size: cover;
+}
+/* .content_box{
+   position: relative;
+   /* display:none; 
+} */
+#hidden_txt4 {
+   font-size: 1.5rem;
+   width: 100px;
+   height: 50px;
+   background-color: red;
+   position:absolute;
+   right: 0;
+   top: 80%;
+   /* display: none; */
+}
+
+#sub_content_txt {
+   position: absolute;
+   top: 10%;
+   right: 0;
+   display: none;
+}
+
+.content strong {
+   font-size: 1.3rem;
+}
