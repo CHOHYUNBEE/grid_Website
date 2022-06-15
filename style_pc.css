@@ -15,11 +15,11 @@
 
    #gnb_group {
       width: 100%;
-      margin-left: 400px;
+      margin-left: 350px;
    }
 
    #sub_header {
-      width: 400px;
+      width: 350px;
       height: 800px;
       display: flex;
       flex-wrap: wrap;
@@ -120,7 +120,7 @@
    #container {
       position: absolute;
       top: 5vh;
-      left: 400px;
+      left: 350px;
    }
 
    #container {
@@ -145,6 +145,8 @@
    /* hover event */
    #container_content:nth-child(2):hover #sub_content_txt1 {
       display: block;
+      transform: translateX(100px);
+      animation: transform_content .3s  ease-in forwards;
    }
 
    #container #hidden_img1:hover img {
@@ -154,18 +156,26 @@
 
    #contents_group .content:nth-child(1):hover #hidden_txt2,#contents_group #content_box1:hover #hidden_txt3,#contents_group #content_box2:hover #hidden_txt4,#contents_group #content_box3:hover #hidden_txt5{
       display: block;
+      transform: translateX(100px);
+      animation: transform_content_txt .3s  ease-in forwards;
    }
    #contents_group .content:nth-child(4):hover #hidden_txt1,#contents_group .content:nth-child(6):hover #hidden_txt7 {
       display: block;
+      transform: translateX(100px);
+      animation: transform_content_txt .3s  ease-in forwards;
    }
    #contents_group .content:nth-child(2):hover #sub_content_txt2 {
       display: block;
+      animation: transform_content .3s  ease-in forwards;
    }
    #contents_group .content:nth-child(3):hover #sub_content_txt3 {
       display: block;
+      transform: translateX(100px);
+      animation: transform_content_txt .3s  ease-in forwards;
    }
    #contents_group .content:nth-child(5):hover  #sub_content_txt4{
       display: block;
+      animation: transform_content_txt .3s ease-in forwards;
    }
    #sub_content_txt2{z-index: 1;}
    #sub_content_txt1 img {
@@ -264,5 +274,15 @@
       position: absolute;
       bottom: 0;
       right: -20px;
+   }
+   @keyframes transform_content {
+      100% {
+         transform: translateX(-80px);
+      }
+   }
+   @keyframes transform_content_txt {
+      100% {
+         transform: translateX(-30px);
+      }
    }
 }
