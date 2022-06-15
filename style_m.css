@@ -112,7 +112,7 @@ body {
 #container_content {
    color: white;
    height: 20vh;
-   background-image: url(./images/icons8-airplane-mode-on-96.png);
+   background-image: url(./images/icons8-paper-plane-100.png);
    background-repeat: no-repeat;
    background-position: 80% 80%;
    background-size: 150px;
@@ -176,7 +176,7 @@ body {
    margin-top: 2vh;
 }
 
-.content:first-child h2:last-child {
+.content:first-child h2:nth-child(3) {
    font-size: 2rem;
    font-weight: bold;
    display: flex;
@@ -243,25 +243,96 @@ body {
    background: url(./images/woman-7.jpg) no-repeat;
    background-size: cover;
 }
+
 /* .content_box{
    position: relative;
    /* display:none; 
 } */
-#hidden_txt4 {
-   font-size: 1.5rem;
-   width: 100px;
-   height: 50px;
-   background-color: red;
-   position:absolute;
-   right: 0;
-   top: 80%;
-   /* display: none; */
+.content_box {
+   position: relative;
 }
 
-#sub_content_txt {
+.hidden_txt {
+   font-size: 2.5rem;
+   width: 100%;
+   height: 50px;
+   font-weight: bold;
+   color: #fff;
+   display: none;
+}
+
+#hidden_txt3 {
+   position: absolute;
+   left: 30%;
+   top: 80%;
+}
+
+#hidden_txt4 {
+   width: 200px;
+   /* background-color: red; */
+   position: absolute;
+   top: 80%;
+   right: 10px;
+}
+
+#hidden_txt5 {
+   width: 200px;
+   position: absolute;
+   top: 80%;
+   right: 10px;
+}
+
+#hidden_txt7 {
+   width: 200px;
+   position: absolute;
+   top: 100%;
+   right: 10px;
+}
+
+#hidden_txt1 {
+   position: absolute;
+   top: 100%;
+   left: 30%;
+   color: #000;
+}
+
+
+#contents_group .content:nth-child(1) {
+   position: relative;
+}
+
+#contents_group .content:nth-child(1) #hidden_txt2 {
+   position: absolute;
+   left: 20%;
+   bottom: 1%;
+   color: #000;
+}
+
+#sub_content_txt1 {
    position: absolute;
    top: 10%;
    right: 0;
+   display: none;
+}
+
+#sub_content_txt2 {
+   position: absolute;
+   top: 50%;
+   right: 10px;
+   display: none;
+}
+
+#sub_content_txt3 {
+   position: absolute;
+   top: 65%;
+   right: 10px;
+   display: none;
+}
+
+#sub_content_txt4 {
+   position: absolute;
+   bottom: 0;
+   right: 22%;
    display: none;
 }
 
